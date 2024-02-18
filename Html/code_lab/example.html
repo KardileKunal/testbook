@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: #949090;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            background-color: aliceblue;
+            margin: 50px;
+            margin-top: 100px;
+            height: 500px; 
+        }
+        .imagestile{
+            padding: 50px;
+        }
+        .imagestile h1{
+            font-family: sans-serif;
+            padding-top: 50px;
+        }
+        .images{
+            display: flex;
+            
+
+        }
+        .names{
+            padding: 50px;
+        }
+        .pname h1,h5{
+            font-family: sans-serif;
+            padding: 10px;
+        }
+        .price h1{
+            font-family: sans-serif;
+            color: orange;
+        }
+        .price input{
+            background-color: orange;
+            padding: 10px;
+            border-radius: 0.5rem;
+        }
+        .price input:hover{
+            cursor: pointer;
+        }
+    </style>
+    <title>Example Cart</title>
+</head>
+<body>
+    <div class="container">
+        <div class="imagestile">
+            <div class="images">   
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQVpfSO0oaTUEzN16eB8pz2ixZ0SuqezZWkA&usqp=CAU" alt="">
+            <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS64BNKok0Dhr6H0D94ciZFXX30JLdXUxTY-4kjK0uh1dFPLBZ8ARq_Dl7c6_U6zI8Ytng&usqp=CAU" alt=""> -->
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5hDvwcBm_qnycsSKaQFuYaldXQY2BVkqDfg&usqp=CAU" alt="">
+            </div>
+            <h1>Customer Reviews</h1>
+        </div>
+        <div class="names">
+            <div class="pname">
+                <h1>Product Name</h1>
+            <h5>Description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam deleniti
+                 eum fuga, sed velit voluptatem enim excepturi tempore dolor architecto! Adipisci, nihil qui
+                 busdam odit sequi illum totam esse magni? Magni!
+                </h5>
+            </div>
+            <div class="price">
+                <h1>$99.99</h1>
+                <input type="button" value="Add to Chart">
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            background-image: url('https://img.freepik.com/free-vector/gradient-network-connection-background_23-2148865393.jpg');
+            background-size: cover;
+            margin: 100px auto;
+            height: 500px;
+            width: 650px;
+        }
+        .top{
+            color: whitesmoke;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .topleft{
+            padding-left:25px;
+        }
+        .topright{
+            margin: 15px;
+        }
+        .topright a{
+            color: whitesmoke;
+            text-decoration: none;
+            padding-right: 10px;
+        }
+        .inputsec{
+            display: flex;
+            justify-content: center;
+            margin: 5rem;
+
+        }
+        .login{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .login input{
+            margin: 0.5rem;
+            padding:10px;
+            background: transparent;
+            background-color: rgba(211, 211, 211, 0.3);
+            border-radius: 1rem;        
+        }
+        .login input::placeholder{
+            color: whitesmoke;
+        }
+        .login input:nth-child(3){
+            background-color: orange;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="top">
+            <div class="topleft">
+                <h3>Key</h3>
+            </div>
+            <div class="topright">
+                <a href="#">Login</a>
+                <a href="#">About us</a>
+                <a href="#">Register</a>
+                <a href="#">Content</a>
+            </div>
+        </div>
+        <div class="inputsec">
+            <div class="login">
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <input type="button" value="Get Started">
+            </div>
+        </div>
+        <div class="bottom">
+
+        </div>
+    </div>
+</body>
+</html>
