@@ -9,19 +9,25 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            background-color: lightcyan;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .main{
             background-image: url('https://img.freepik.com/free-vector/gradient-network-connection-background_23-2148865393.jpg');
             background-size: cover;
-            margin: 100px auto;
-            height: 500px;
-            width: 650px;
+            border-radius: 0.8rem;
+            margin: 100px;
+            height: auto;
+            width: 700px;
         }
         .top{
             color: whitesmoke;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            padding: 5px;
         }
         .topleft{
             padding-left:25px;
@@ -37,7 +43,8 @@
         .inputsec{
             display: flex;
             justify-content: center;
-            margin: 5rem;
+            align-items: center;
+            padding-top: 50px;
 
         }
         .login{
@@ -47,7 +54,8 @@
         }
         .login input{
             margin: 0.5rem;
-            padding:10px;
+            padding:10px 70px;
+            text-align: center;
             background: transparent;
             background-color: rgba(211, 211, 211, 0.3);
             border-radius: 1rem;        
@@ -58,6 +66,62 @@
         .login input:nth-child(3){
             background-color: orange;
             color: #fff;
+            font-size: 0.8rem;
+            font-weight: 600;
+        } 
+        .login input:nth-child(3):hover{
+            cursor: pointer;
+        }
+        .logindown{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 10px 150px;
+            color: #e2d8d8;
+            font-family: sans-serif;
+            font-size: 0.85rem;
+        }
+        .logindown a{
+            text-decoration: none;
+            color: lightgray;
+            font-size: 0.75rem;
+            opacity: 0.5;
+        }
+        .logindown h4{
+            font-weight: lighter; 
+            cursor: pointer;
+        }
+        .logindown label{
+            font-size: 0.75rem;
+            opacity: 0.5;
+        }
+        .logindown input{
+            font-size: 0.75rem;
+            opacity: 0.5;
+            cursor: pointer;
+        }
+        .bottom{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: lightcyan;
+            padding: 15px;
+        }
+        .bottom .botleft{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
+        }
+        .botleft h5{
+            padding: 5px;
+            font-family: sans-serif;
+            font-weight: lighter;
+            cursor: pointer;
+        }
+        .botright h5{
+            font-family: sans-serif;
+            font-weight: 100;
         }
     </style>
 </head>
@@ -78,11 +142,31 @@
             <div class="login">
             <input type="text" placeholder="Username">
             <input type="password" placeholder="Password">
-            <input type="button" value="Get Started">
+            <input type="button" value="GET STARTED">
+            </div>
+        </div>
+        <div class="logindown">
+            <div class="logleft">
+                <input type="checkbox" name="" id="">
+                <label for="checkbox">Keep Logged In</label>
+                <h4>Create Account</h4>
+            </div>
+            <div class="logright">
+                <a href="#">Forget Password ?</a>
+                <h4>Need Help ?</h4>
             </div>
         </div>
         <div class="bottom">
-
+            <div class="botleft">
+                <h5>About Us</h5>
+                <h5>Privacy Policy</h5>
+                <h5>Terms Of Use</h5>
+            </div>
+            <div class="botright">
+                <h5>
+                    2024 Key. All Rights Reserved | Design By <b>KKunal</b>
+                </h5>
+            </div>
         </div>
     </div>
 </body>
