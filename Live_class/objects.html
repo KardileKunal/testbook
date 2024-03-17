@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Objects in JS</h1>
+    <p id="demo"></p>
+    <script>
+        let studentDetail={
+            name:'Peter',
+            uid:48,
+            designtaion:'Spider Man',
+            show:function(){
+                console.log(`Hello my name is ${this.name}`);
+            },
+            
+        }
+        document.getElementById('demo').innerHTML=studentDetail.uid+studentDetail.name
+        console.log(studentDetail);
+        console.log(studentDetail.uid);
+        studentDetail.show()
+
+    </script>
+</body>
+</html>

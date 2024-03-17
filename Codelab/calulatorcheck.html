@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Calculation</title>
+</head>
+<body>
+    <input type="text" id="Fnumber" placeholder="Enter your First Number">
+    <input type="text" id="Snumber" placeholder="Enter your Second Number">
+    <input type="text" id="Anumber" placeholder="Enter your Answer">
+    <button onclick="validate()">Addition</button>
+    <button>Subtraction</button>
+    <button>Multiplication</button>
+    <button>Division</button>
+    <p id="display"></p>
+    <script>
+        function validate(){
+            fNum=parseInt(document.getElementById("Fnumber").value);
+            sNum=parseInt(document.getElementById("Snumber").value);
+            Ans=parseInt(document.getElementById("Anumber").value);
+            Add=fNum+sNum;
+            Sub=fNum-sNum;
+            Mul=fNum*sNum;
+            Div=fNum/sNum;
+            var correct="Congratulations!, Answer is Correct"
+            var wrong="Try Again!"
+            if (Ans==Add) {
+                document.getElementById("display").innerHTML=correct;
+            }
+            elseif(Ans==Sub)
+            {
+                document.getElementById("display").innerHTML=correct;
+            }
+            elseif(Ans==Mul)
+            {
+                document.getElementById("display").innerHTML=correct;
+            }
+            elseif(Ans==Div)
+            {
+                document.getElementById("display").innerHTML=wrong;
+            }
+
+        }
+    </script>
+</body>
+</html>

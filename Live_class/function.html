@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Function in JS</h1>
+    <p id="demo"></p>
+    <script>
+         //Example-1
+         // Non-Parameterized Function
+         function show(){
+             console.log('Show function');
+         }
+        show();   //function calling
+
+ // //Example-2
+        // // Parameterized Function
+//         function show(name){
+//             console.log('Show function',name);
+//         }
+//         show('Peter');   //function calling
+// let show=90;
+// console.log(show);
+        //     let a=11;
+        // function show(num){
+        //     console.log('Show function',num);
+        // }
+        // show(a);   //function calling
+
+        //example-3
+        // const display=()=>{
+        //     console.log('display');
+        // }
+        // display();
+
+
+         //example-4
+        // let abc=(name)=>{
+        //     console.log('display',name);
+        // }
+        
+        //  abc=9;
+        //  console.log(abc);
+        //  abc('Hulk');
+        // let a=11;
+       
+        // a=12;
+        // console.log(a);
+        // console.log(a);
+
+        //example 5
+        // function declaration vs function expression
+            // function details(){
+            //     console.log('Details');
+            // }
+            // details();
+
+
+            //function expression
+            // const details=()=>{
+            //     console.log('detail arrow function');
+            // }
+            // details();
+
+            // var details=function(){
+            //     console.log('detail arrow function');
+            // }
+            // details();
+
+            //example-6
+            //return
+            // function studentDetail(name,uid){
+            //     document.getElementById('demo').innerHTML=`The name is ${name} and uid is ${uid}`;
+            // }
+            // studentDetail('Peter',48)
+
+            //other way-1
+            // function studentDetail(name,uid){
+            //     return `The name is ${name} and uid is ${uid}`;
+            // }
+            // document.getElementById('demo').innerHTML=studentDetail('Tony Stark',48);
+
+
+            //other-way-2
+            // function studentDetail(name,uid){
+            //     console.log('Hello ', name);
+            //     // return 8
+            //     // return `The name is ${name} and uid is ${uid}`;
+            // }
+            // document.getElementById('demo').innerHTML=studentDetail('Tony Stark',48);
+// console.log(studentDetail('Peter',89));
+
+
+//example-7
+// let name='ShinChan';
+// let fruitName=prompt("enter fav fruit");
+// (function fruits(){
+// document.getElementById('demo').innerHTML=`${name} likes ${fruitName}.`;
+// console.log(`${name} likes ${fruitName}.`);
+// })(name,fruitName)
+// fruits(name,fruitName);
+
+
+//example 8
+
+// const display=()=>{
+//     console.log('Hello');
+//     return 9
+// }
+// // console.log(display());
+// // //scenario-1
+// // const a=display;
+// // console.log(a);
+// // a();
+
+
+// // //scenario-1
+// const a=display();
+// console.log(a);
+// a();
+
+
+//example -9
+// const outer=()=>{
+//     let a=9;
+//     console.log('Outer function',a);
+//     const inner=()=>{
+//         let b=11;
+//         console.log('inner ',b);
+
+//     }
+//     inner();
+// }
+// outer();
+
+// //example 10
+// const outer=()=>{
+//     let a=9;
+//     console.log('Outer function',a);
+//     const inner=()=>{
+//         let b=11;
+//         console.log('inner ',b);
+//         return 9
+
+//     }
+//     return inner();
+// }
+// // outer();
+// console.log(outer());
+
+//example 11
+// const outer=()=>{
+//     let a=9;
+//     console.log('Outer function',a);
+//     const inner=()=>{
+//         let b=11;
+//         console.log('inner ',b);
+//         return 9
+
+//     }
+//     return inner();
+    
+// }
+// outer()();
+
+
+//example 12
+// const outer=()=>{
+//     let a=9;
+//     console.log('Outer function',a);
+    
+//     return kuchbhi;
+    
+// }
+// console.log(outer());
+
+           
+
+           
+    </script>
+</body>
+</html>

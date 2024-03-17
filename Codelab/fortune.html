@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortune Teller</title>
+</head>
+<body>
+    <h1>Fortune Teller</h1>
+    <input type="text" id="firstnumber" placeholder="Enter Number">
+    <input type="text" id="secondnumber" placeholder="Enter Number">
+    <button onclick="AddNum()">
+        Addition
+    </button>
+    <p id="ans"></p>
+    <script>
+        function AddNum() {
+            let fnum=parseInt(document.getElementById("firstnumber").value);
+            let snum=parseInt(document.getElementById("secondnumber").value); 
+            let Addition=document.getElementById("ans");
+            Addition.innerHTML=`addition of numbers is ${fnum+snum}`;       
+        }
+    </script>
+</body>
+</html>
