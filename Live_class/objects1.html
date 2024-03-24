@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Objects in JS</h1>
+    <p id="demo"></p>
+    <script>
+        let a = 9;
+        let dat = {
+            date: '12-12-7887'
+        }
+        let studentDetail = {
+            name: 'Peter',
+            uid: 48,
+            designtaion: 'Spider Man',
+            show: function () {
+                console.log(this);  //scope for class
+                console.log(`Hello my name is ${this.name}`);
+            },
+            arrorData: () => {
+                console.log(this); //global scope for this
+            },
+            address: {
+                name: 'address',
+                houseNumber: 456,
+                city: 'San Jose',
+                pinocde: 167389,
+                addressFunction: function () {
+                    console.log(this.name);
+                    console.log(`the inner object  is ${this.name}`);
+                    console.log(`The outer object name ${studentDetail.name}`);
+                }
+            }
+        }
+        studentDetail.address.addressFunction();
+        studentDetail.arrorData();
+        studentDetail.show();
+        // document.getElementById('demo').innerHTML=studentDetail.uid+studentDetail.name
+        // console.log(studentDetail);
+        // console.log(studentDetail.uid);
+        // studentDetail.show();
+        // console.log(studentDetail.address.houseNumber);
+
+    </script>
+</body>
+
+</html>
